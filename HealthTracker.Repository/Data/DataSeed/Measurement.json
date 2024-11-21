@@ -1,0 +1,92 @@
+﻿[
+  {
+    "Id": "1",
+    "UserId": "1",
+    "Type": "Weight",
+    "Value": 70.5,
+    "Unit": "kg",
+    "Target": 68,
+    "MeasurementDate": "2023-10-01T00:00:00"
+  },
+  {
+    "Id": "2",
+    "UserId": "2",
+    "Type": "Height",
+    "Value": 175.0,
+    "Unit": "cm",
+    "Target": 175,
+    "MeasurementDate": "2023-10-02T00:00:00"
+  },
+  {
+    "Id": "3",
+    "UserId": "3",
+    "Type": "BMI",
+    "Value": 22.5,
+    "Unit": "kg/m2",
+    "Target": 22,
+    "MeasurementDate": "2023-10-03T00:00:00"
+  },
+  {
+    "Id": "4",
+    "UserId": "4",
+    "Type": "Body Fat",
+    "Value": 18.0,
+    "Unit": "%",
+    "Target": 15,
+    "MeasurementDate": "2023-10-04T00:00:00"
+  },
+  {
+    "Id": "5",
+    "UserId": "5",
+    "Type": "Muscle Mass",
+    "Value": 30.0,
+    "Unit": "kg",
+    "Target": 32,
+    "MeasurementDate": "2023-10-05T00:00:00"
+  },
+  {
+    "Id": "6",
+    "UserId": "6",
+    "Type": "Waist Circumference",
+    "Value": 85.0,
+    "Unit": "cm",
+    "Target": 80,
+    "MeasurementDate": "2023-10-06T00:00:00"
+  },
+  {
+    "Id": "7",
+    "UserId": "7",
+    "Type": "Hip Circumference",
+    "Value": 95.0,
+    "Unit": "cm",
+    "Target": 90,
+    "MeasurementDate": "2023-10-07T00:00:00"
+  },
+  {
+    "Id": "8",
+    "UserId": "8",
+    "Type": "Chest Circumference",
+    "Value": 100.0,
+    "Unit": "cm",
+    "Target": 98,
+    "MeasurementDate": "2023-10-08T00:00:00"
+  },
+  {
+    "Id": "9",
+    "UserId": "9",
+    "Type": "Thigh Circumference",
+    "Value": 60.0,
+    "Unit": "cm",
+    "Target": 58,
+    "MeasurementDate": "2023-10-09T00:00:00"
+  },
+  {
+    "Id": "10",
+    "UserId": "10",
+    "Type": "Arm Circumference",
+    "Value": 35.0,
+    "Unit": "cm",
+    "Target": 34,
+    "MeasurementDate": "2023-10-10T00:00:00"
+  }
+]

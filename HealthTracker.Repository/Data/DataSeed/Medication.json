@@ -1,0 +1,47 @@
+﻿[
+  {
+    "Id": "1",
+    "UserId": "1",
+    "Name": "Ibuprofen",
+    "Dosage": "200mg",
+    "StartDate": "2023-10-01T00:00:00",
+    "EndDate": "2023-10-08T00:00:00",
+    "Frequency": "Twice a day"
+  },
+  {
+    "Id": "2",
+    "UserId": "2",
+    "Name": "Paracetamol",
+    "Dosage": "500mg",
+    "StartDate": "2023-10-02T00:00:00",
+    "EndDate": "2023-10-09T00:00:00",
+    "Frequency": "Three times a day"
+  },
+  {
+    "Id": "3",
+    "UserId": "3",
+    "Name": "Amoxicillin",
+    "Dosage": "250mg",
+    "StartDate": "2023-10-03T00:00:00",
+    "EndDate": "2023-10-10T00:00:00",
+    "Frequency": "Twice a day"
+  },
+  {
+    "Id": "4",
+    "UserId": "4",
+    "Name": "Metformin",
+    "Dosage": "500mg",
+    "StartDate": "2023-10-04T00:00:00",
+    "EndDate": "2023-10-11T00:00:00",
+    "Frequency": "Once a day"
+  },
+  {
+    "Id": "5",
+    "UserId": "5",
+    "Name": "Lisinopril",
+    "Dosage": "10mg",
+    "StartDate": "2023-10-05T00:00:00",
+    "EndDate": "2023-10-12T00:00:00",
+    "Frequency": "Once a day"
+  }
+]

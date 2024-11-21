@@ -1,0 +1,47 @@
+﻿[
+  {
+    "Id": "1",
+    "UserId": "1",
+    "DoctorName": "Dr. Smith",
+    "Specialty": "Cardiologist",
+    "AppointmentDate": "2023-10-15T10:00:00",
+    "Location": "City Hospital",
+    "Notes": "Routine check-up"
+  },
+  {
+    "Id": "2",
+    "UserId": "2",
+    "DoctorName": "Dr. Johnson",
+    "Specialty": "Dermatologist",
+    "AppointmentDate": "2023-10-16T11:00:00",
+    "Location": "Downtown Clinic",
+    "Notes": "Skin rash"
+  },
+  {
+    "Id": "3",
+    "UserId": "3",
+    "DoctorName": "Dr. Lee",
+    "Specialty": "Orthopedic",
+    "AppointmentDate": "2023-10-17T09:00:00",
+    "Location": "Health Center",
+    "Notes": "Knee pain"
+  },
+  {
+    "Id": "4",
+    "UserId": "4",
+    "DoctorName": "Dr. Brown",
+    "Specialty": "General Practitioner",
+    "AppointmentDate": "2023-10-18T14:00:00",
+    "Location": "Community Health Clinic",
+    "Notes": "Annual physical"
+  },
+  {
+    "Id": "5",
+    "UserId": "5",
+    "DoctorName": "Dr. Davis",
+    "Specialty": "Endocrinologist",
+    "AppointmentDate": "2023-10-19T13:00:00",
+    "Location": "Specialty Medical Center",
+    "Notes": "Diabetes management"
+  }
+]

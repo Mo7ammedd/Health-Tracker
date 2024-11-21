@@ -1,0 +1,102 @@
+﻿[
+  {
+    "Id": "1",
+    "UserId": "1",
+    "Name": "Running",
+    "Duration": 30,
+    "ExerciseDate": "2023-10-01T00:00:00",
+    "Type": "Cardio",
+    "Intensity": "Medium",
+    "CaloriesBurned": 300
+  },
+  {
+    "Id": "2",
+    "UserId": "2",
+    "Name": "Cycling",
+    "Duration": 45,
+    "ExerciseDate": "2023-10-02T00:00:00",
+    "Type": "Cardio",
+    "Intensity": "High",
+    "CaloriesBurned": 450
+  },
+  {
+    "Id": "3",
+    "UserId": "3",
+    "Name": "Yoga",
+    "Duration": 60,
+    "ExerciseDate": "2023-10-03T00:00:00",
+    "Type": "Flexibility",
+    "Intensity": "Low",
+    "CaloriesBurned": 200
+  },
+  {
+    "Id": "4",
+    "UserId": "4",
+    "Name": "Swimming",
+    "Duration": 30,
+    "ExerciseDate": "2023-10-04T00:00:00",
+    "Type": "Cardio",
+    "Intensity": "Medium",
+    "CaloriesBurned": 350
+  },
+  {
+    "Id": "5",
+    "UserId": "5",
+    "Name": "Weightlifting",
+    "Duration": 40,
+    "ExerciseDate": "2023-10-05T00:00:00",
+    "Type": "Strength",
+    "Intensity": "High",
+    "CaloriesBurned": 400
+  },
+  {
+    "Id": "6",
+    "UserId": "6",
+    "Name": "Hiking",
+    "Duration": 90,
+    "ExerciseDate": "2023-10-06T00:00:00",
+    "Type": "Cardio",
+    "Intensity": "Medium",
+    "CaloriesBurned": 600
+  },
+  {
+    "Id": "7",
+    "UserId": "7",
+    "Name": "Dancing",
+    "Duration": 50,
+    "ExerciseDate": "2023-10-07T00:00:00",
+    "Type": "Cardio",
+    "Intensity": "Medium",
+    "CaloriesBurned": 400
+  },
+  {
+    "Id": "8",
+    "UserId": "8",
+    "Name": "Pilates",
+    "Duration": 60,
+    "ExerciseDate": "2023-10-08T00:00:00",
+    "Type": "Flexibility",
+    "Intensity": "Low",
+    "CaloriesBurned": 250
+  },
+  {
+    "Id": "9",
+    "UserId": "9",
+    "Name": "Boxing",
+    "Duration": 30,
+    "ExerciseDate": "2023-10-09T00:00:00",
+    "Type": "Strength",
+    "Intensity": "High",
+    "CaloriesBurned": 500
+  },
+  {
+    "Id": "10",
+    "UserId": "10",
+    "Name": "Jogging",
+    "Duration": 35,
+    "ExerciseDate": "2023-10-10T00:00:00",
+    "Type": "Cardio",
+    "Intensity": "Medium",
+    "CaloriesBurned": 320
+  }
+]

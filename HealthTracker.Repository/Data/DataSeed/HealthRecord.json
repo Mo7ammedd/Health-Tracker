@@ -1,0 +1,92 @@
+﻿[
+  {
+    "Id": "1",
+    "UserId": "1",
+    "RecordDate": "2023-10-01T00:00:00",
+    "Notes": "Feeling good",
+    "BloodPressure": 120.5,
+    "HeartRate": 75,
+    "BloodSugar": 90
+  },
+  {
+    "Id": "2",
+    "UserId": "2",
+    "RecordDate": "2023-10-02T00:00:00",
+    "Notes": "Slight headache",
+    "BloodPressure": 130.2,
+    "HeartRate": 80,
+    "BloodSugar": 95
+  },
+  {
+    "Id": "3",
+    "UserId": "3",
+    "RecordDate": "2023-10-03T00:00:00",
+    "Notes": "Feeling tired",
+    "BloodPressure": 110.8,
+    "HeartRate": 70,
+    "BloodSugar": 85
+  },
+  {
+    "Id": "4",
+    "UserId": "4",
+    "RecordDate": "2023-10-04T00:00:00",
+    "Notes": "Good energy",
+    "BloodPressure": 115.6,
+    "HeartRate": 72,
+    "BloodSugar": 88
+  },
+  {
+    "Id": "5",
+    "UserId": "5",
+    "RecordDate": "2023-10-05T00:00:00",
+    "Notes": "Feeling stressed",
+    "BloodPressure": 140.3,
+    "HeartRate": 85,
+    "BloodSugar": 100
+  },
+  {
+    "Id": "6",
+    "UserId": "6",
+    "RecordDate": "2023-10-06T00:00:00",
+    "Notes": "Feeling relaxed",
+    "BloodPressure": 118.4,
+    "HeartRate": 74,
+    "BloodSugar": 92
+  },
+  {
+    "Id": "7",
+    "UserId": "7",
+    "RecordDate": "2023-10-07T00:00:00",
+    "Notes": "Slight dizziness",
+    "BloodPressure": 125.7,
+    "HeartRate": 78,
+    "BloodSugar": 97
+  },
+  {
+    "Id": "8",
+    "UserId": "8",
+    "RecordDate": "2023-10-08T00:00:00",
+    "Notes": "Good mood",
+    "BloodPressure": 112.9,
+    "HeartRate": 71,
+    "BloodSugar": 89
+  },
+  {
+    "Id": "9",
+    "UserId": "9",
+    "RecordDate": "2023-10-09T00:00:00",
+    "Notes": "Feeling anxious",
+    "BloodPressure": 135.1,
+    "HeartRate": 82,
+    "BloodSugar": 98
+  },
+  {
+    "Id": "10",
+    "UserId": "10",
+    "RecordDate": "2023-10-10T00:00:00",
+    "Notes": "Feeling great",
+    "BloodPressure": 119.3,
+    "HeartRate": 73,
+    "BloodSugar": 91
+  }
+]

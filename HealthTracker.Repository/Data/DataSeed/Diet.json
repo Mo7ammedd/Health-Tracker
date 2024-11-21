@@ -1,0 +1,112 @@
+﻿[
+  {
+    "Id": "1",
+    "UserId": "1",
+    "MealType": "Breakfast",
+    "Description": "Oatmeal with fruits",
+    "MealDate": "2023-10-01T00:00:00",
+    "Calories": 350,
+    "Protein": 10,
+    "Carbohydrates": 50,
+    "Fats": 5
+  },
+  {
+    "Id": "2",
+    "UserId": "2",
+    "MealType": "Lunch",
+    "Description": "Grilled chicken salad",
+    "MealDate": "2023-10-02T00:00:00",
+    "Calories": 400,
+    "Protein": 30,
+    "Carbohydrates": 20,
+    "Fats": 15
+  },
+  {
+    "Id": "3",
+    "UserId": "3",
+    "MealType": "Dinner",
+    "Description": "Steak with vegetables",
+    "MealDate": "2023-10-03T00:00:00",
+    "Calories": 500,
+    "Protein": 40,
+    "Carbohydrates": 30,
+    "Fats": 20
+  },
+  {
+    "Id": "4",
+    "UserId": "4",
+    "MealType": "Snack",
+    "Description": "Greek yogurt with honey",
+    "MealDate": "2023-10-04T00:00:00",
+    "Calories": 150,
+    "Protein": 8,
+    "Carbohydrates": 20,
+    "Fats": 5
+  },
+  {
+    "Id": "5",
+    "UserId": "5",
+    "MealType": "Breakfast",
+    "Description": "Scrambled eggs with toast",
+    "MealDate": "2023-10-05T00:00:00",
+    "Calories": 300,
+    "Protein": 15,
+    "Carbohydrates": 25,
+    "Fats": 10
+  },
+  {
+    "Id": "6",
+    "UserId": "6",
+    "MealType": "Lunch",
+    "Description": "Turkey sandwich",
+    "MealDate": "2023-10-06T00:00:00",
+    "Calories": 350,
+    "Protein": 20,
+    "Carbohydrates": 40,
+    "Fats": 10
+  },
+  {
+    "Id": "7",
+    "UserId": "7",
+    "MealType": "Dinner",
+    "Description": "Salmon with quinoa",
+    "MealDate": "2023-10-07T00:00:00",
+    "Calories": 450,
+    "Protein": 35,
+    "Carbohydrates": 30,
+    "Fats": 15
+  },
+  {
+    "Id": "8",
+    "UserId": "8",
+    "MealType": "Snack",
+    "Description": "Apple with peanut butter",
+    "MealDate": "2023-10-08T00:00:00",
+    "Calories": 200,
+    "Protein": 5,
+    "Carbohydrates": 30,
+    "Fats": 10
+  },
+  {
+    "Id": "9",
+    "UserId": "9",
+    "MealType": "Breakfast",
+    "Description": "Smoothie with spinach and banana",
+    "MealDate": "2023-10-09T00:00:00",
+    "Calories": 250,
+    "Protein": 8,
+    "Carbohydrates": 40,
+    "Fats": 5
+  },
+  {
+    "Id": "10",
+    "UserId": "10",
+    "MealType": "Lunch",
+    "Description": "Vegetable stir-fry with tofu",
+    "MealDate": "2023-10-10T00:00:00",
+    "Calories": 300,
+    "Protein": 15,
+    "Carbohydrates": 35,
+    "Fats": 10
+  }
+]
