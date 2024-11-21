@@ -77,6 +77,27 @@ public class AccountsControllers : ControllerBase
             RefreshToken = refreshToken.Token
         };
     }
+    [HttpPost("refresh-token")]
+    public async Task<ActionResult<UserToReturnDto>> RefreshToken([FromBody] RefreshTokenDto refreshTokenDto)
+    {
+        var user = await _userManager.FindByEmailAsync(refreshTokenDto.Email);
+        if (user == null || !await _authService.ValidateRefreshTokenAsync(user, refreshTokenDto.Token))
+        {
+            return Unauthorized(new ApiResponse(401, "Invalid refresh token."));
+        }
+    
+        var newToken = await _authService.CreateTokenAsync(user, _userManager);
+        var newRefreshToken = await _authService.GenerateRefreshTokenAsync(user);
+    
+        return new UserToReturnDto
+        {
+            Email = user.Email,
+            Token = newToken,
+            DisplayName = user.FirstName,
+            RefreshToken = newRefreshToken.Token
+        };
+    }
+
 
     [HttpGet("email-exists")]
     public async Task<ActionResult<bool>> CheckEmailExistsAsync([FromQuery] string email)
