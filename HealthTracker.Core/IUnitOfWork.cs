@@ -7,6 +7,7 @@ public interface IUnitOfWork
 {
     IGenericRepository<T> Repository<T>() where T : class; 
     
+    
     IUserRepository UserRepository { get; }
     
     Task<int> CompleteAsync();

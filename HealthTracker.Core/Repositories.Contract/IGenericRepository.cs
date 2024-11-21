@@ -1,4 +1,5 @@
-﻿using HealthTracker.Core.Entities;
+﻿using System.Linq.Expressions;
+using HealthTracker.Core.Entities;
 
 namespace HealthTracker.Core.IRepositories;
 
@@ -10,8 +11,11 @@ public interface IGenericRepository<T> where T : class
 
     Task AddAsync(T entity);
     
-    void Update(T entity);
+    Task Update(T entity);
     
     void Delete(T entity);
+    
+    Task<T> FirstOrDefaultAsync(Expression<Func<T, bool>> predicate);
+
 
 }
