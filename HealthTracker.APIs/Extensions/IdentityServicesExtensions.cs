@@ -39,7 +39,7 @@ public static class IdentityServicesExtensions
                     ValidateIssuerSigningKey = true,
                     IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(config["JWT:SecretKey"])),
                     ValidateLifetime = true,
-                    ClockSkew = TimeSpan.FromDays(double.Parse(config["JWT:TokenLifeTime"]))
+                    ClockSkew = TimeSpan.FromSeconds(double.Parse(config["JWT:TokenLifeTime"]))
                 };
             });
         return services;

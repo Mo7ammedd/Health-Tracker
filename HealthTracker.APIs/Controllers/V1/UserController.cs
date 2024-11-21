@@ -3,10 +3,12 @@ using HealthTracker.Core;
 using HealthTracker.Core.Entities;
 using HealthTrracke.APIs.Controllers;
 using HealthTrracke.APIs.Controllers.V1;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace HealthTracker.APIs.Controllers.V1
 {
+    [Authorize]
     public class UserController : BaseApiController
     {
         private readonly IUnitOfWork _unitOfWork;
