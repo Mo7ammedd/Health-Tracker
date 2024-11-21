@@ -7,6 +7,19 @@ public class HealthTrackerContextSeed
 {
     public async static Task SeedAsync(HealthTrackerDbContext _dbContext)
     {
+        if (!_dbContext.Users.Any())
+        {
+            var usersData = await File.ReadAllTextAsync("../HealthTracker.Repository/Data/DataSeed/User.json");
+            var users = JsonSerializer.Deserialize<List<User>>(usersData);
+            if (users is not null && users.Count > 0)
+            {
+                foreach (var user in users)
+                {
+                    _dbContext.Set<User>().Add(user);
+                }
+                await _dbContext.SaveChangesAsync();
+            }
+        }
         if (!_dbContext.Appointments.Any())
         {
             var appointmentsData = await File.ReadAllTextAsync("../HealthTracker.Repository/Data/DataSeed/Appointment.json");
@@ -21,19 +34,6 @@ public class HealthTrackerContextSeed
             }
         }
 
-        if (!_dbContext.Users.Any())
-        {
-            var usersData = await File.ReadAllTextAsync("../HealthTracker.Repository/Data/DataSeed/User.json");
-            var users = JsonSerializer.Deserialize<List<User>>(usersData);
-            if (users is not null && users.Count > 0)
-            {
-                foreach (var user in users)
-                {
-                    _dbContext.Set<User>().Add(user);
-                }
-                await _dbContext.SaveChangesAsync();
-            }
-        }
 
         if (!_dbContext.HealthRecords.Any())
         {
