@@ -16,12 +16,14 @@ namespace HealthTracker.Services
             _logger = logger;
         }
 
-        public async Task<IReadOnlyList<HealthRecord>> GetAllHealthRecordsAsync()
+        public async Task<IReadOnlyList<HealthRecord>> GetAllHealthRecordsAsync(string userId)
         {
-            return await _unitOfWork.Repository<HealthRecord>().GetAll();
+            return await _unitOfWork.Repository<HealthRecord>().GetAllAsync(hr => hr.UserId == userId);
         }
 
-        public async Task<HealthRecord> GetHealthRecordByIdAsync(Guid id)
+        
+
+        public async Task<HealthRecord> GetHealthRecordByIdAsync(string id)
         {
             return await _unitOfWork.Repository<HealthRecord>().GetById(id);
         }
@@ -54,7 +56,7 @@ namespace HealthTracker.Services
             }
         }
 
-        public async Task DeleteHealthRecordAsync(Guid id)
+        public async Task DeleteHealthRecordAsync(string id)
         {
             try
             {

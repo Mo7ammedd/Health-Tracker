@@ -4,7 +4,7 @@ namespace HealthTracker.Core.Entities
 {
     public class HealthRecord : BaseEntity
     {
-        public string UserId { get; set; } // Changed from Guid to string
+        public string UserId { get; set; } 
         public DateTime RecordDate { get; set; }
         public string Notes { get; set; }
         public double BloodPressure { get; set; }

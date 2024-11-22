@@ -22,7 +22,7 @@ namespace HealthTracker.APIs.Controllers.V1
         [HttpGet]
         public async Task<ActionResult<IReadOnlyList<User>>> GetUsers()
         {
-            var users = await _unitOfWork.UserRepository.GetAll();
+            var users = await _unitOfWork.UserRepository.GetAllAsync();
             return Ok(users);
         }
 
@@ -45,7 +45,7 @@ namespace HealthTracker.APIs.Controllers.V1
 
         // Get user by id
         [HttpGet("{id}")]
-        public async Task<ActionResult<User>> GetUser(Guid id)
+        public async Task<ActionResult<User>> GetUser(string id)
         {
             var user = await _unitOfWork.Repository<User>().GetById(id);
 

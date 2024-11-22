@@ -3,12 +3,13 @@ using HealthTracker.APIs.DTOs.Outgoing;
 using HealthTracker.APIs.Errors;
 using HealthTracker.Core.Entities;
 using HealthTracker.Core.Services.Contract;
+using HealthTrracke.APIs.Controllers.V1;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 
 namespace HealthTracker.APIs.Controllers.V1;
 
-public class AccountsControllers : ControllerBase
+public class AccountsControllers : BaseApiController
 {
     private readonly UserManager<User> _userManager;
     private readonly SignInManager<User> _signInManager;

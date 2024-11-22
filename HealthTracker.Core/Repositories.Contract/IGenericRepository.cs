@@ -5,9 +5,7 @@ namespace HealthTracker.Core.IRepositories;
 
 public interface IGenericRepository<T> where T : class
 {
-    Task<IReadOnlyList<T>> GetAll();
-
-    Task<T> GetById(Guid id);
+    Task<T> GetById(string id);
 
     Task AddAsync(T entity);
     
@@ -18,4 +16,5 @@ public interface IGenericRepository<T> where T : class
     Task<T> FirstOrDefaultAsync(Expression<Func<T, bool>> predicate);
 
 
+    Task<IReadOnlyList<T>> GetAllAsync(Expression<Func<T, bool>> predicate = null);
 }

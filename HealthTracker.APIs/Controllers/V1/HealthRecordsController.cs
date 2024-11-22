@@ -1,4 +1,5 @@
-﻿using HealthTracker.APIs.DTOs;
+﻿using System.Security.Claims;
+using HealthTracker.APIs.DTOs;
 using HealthTracker.Core.Entities;
 using HealthTracker.Core.Services.Contract;
 using HealthTrracke.APIs.Controllers.V1;
@@ -18,14 +19,22 @@ namespace HealthTracker.APIs.Controllers.V1
         }
 
         [HttpGet]
+        // HealthRecordsController.cs
+        [HttpGet]
         public async Task<ActionResult<IReadOnlyList<HealthRecord>>> GetAllHealthRecords()
         {
-            var healthRecords = await _healthRecordsService.GetAllHealthRecordsAsync();
+            var userId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+            if (string.IsNullOrEmpty(userId))
+            {
+                return Unauthorized();
+            }
+
+            var healthRecords = await _healthRecordsService.GetAllHealthRecordsAsync(userId);
             return Ok(healthRecords);
         }
 
         [HttpGet("{id}")]
-        public async Task<ActionResult<HealthRecord>> GetHealthRecordById(Guid id)
+        public async Task<ActionResult<HealthRecord>> GetHealthRecordById(string id)
         {
             var healthRecord = await _healthRecordsService.GetHealthRecordByIdAsync(id);
             if (healthRecord == null)
@@ -53,7 +62,7 @@ namespace HealthTracker.APIs.Controllers.V1
         }
 
         [HttpPut("{id}")]
-        public async Task<ActionResult> UpdateHealthRecord(Guid id, HealthRecordDto healthRecordDto)
+        public async Task<ActionResult> UpdateHealthRecord(string id, HealthRecordDto healthRecordDto)
         {
             var healthRecord = await _healthRecordsService.GetHealthRecordByIdAsync(id);
             if (healthRecord == null)
@@ -73,7 +82,7 @@ namespace HealthTracker.APIs.Controllers.V1
         }
 
         [HttpDelete("{id}")]
-        public async Task<ActionResult> DeleteHealthRecord(Guid id)
+        public async Task<ActionResult> DeleteHealthRecord(string id)
         {
             var healthRecord = await _healthRecordsService.GetHealthRecordByIdAsync(id);
             if (healthRecord == null)

@@ -13,7 +13,7 @@ public class UserRepository : GenericRepository<User>, IUserRepository
 
     }
 
-    public override async Task<IReadOnlyList<User>> GetAll()
+    public async Task<IReadOnlyList<User>> GetAllAsync()
     {
         return await _context.Users.ToListAsync();
 

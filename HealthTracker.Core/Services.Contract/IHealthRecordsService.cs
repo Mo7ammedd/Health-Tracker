@@ -4,9 +4,9 @@ namespace HealthTracker.Core.Services.Contract;
 
 public interface IHealthRecordsService
 {
-    Task<IReadOnlyList<HealthRecord>> GetAllHealthRecordsAsync();
-    Task<HealthRecord> GetHealthRecordByIdAsync(Guid id);
+    Task<IReadOnlyList<HealthRecord>> GetAllHealthRecordsAsync(string userId);
+    Task<HealthRecord> GetHealthRecordByIdAsync(string id);
     Task AddHealthRecordAsync(HealthRecord healthRecord);
     Task UpdateHealthRecordAsync(HealthRecord healthRecord);
-    Task DeleteHealthRecordAsync(Guid id);
+    Task DeleteHealthRecordAsync(string id);
 }
